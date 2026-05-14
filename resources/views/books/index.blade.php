@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Books List</h1>
+    <a href="{{ route('books.create') }}" class="btn btn-primary">Create New Book</a>
     <ul>
         @foreach ($books as $book)
             <li>{{ $book->title }} by {{ $book->author }}</li>
