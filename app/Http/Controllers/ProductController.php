@@ -13,6 +13,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
+
         return view('products.index', compact('products'));
     }
 
@@ -46,6 +47,7 @@ class ProductController extends Controller
     public function show(string $id)
     {
         $product = Product::findOrFail($id);
+
         return view('products.show', compact('product'));
     }
 
@@ -55,6 +57,7 @@ class ProductController extends Controller
     public function edit(string $id)
     {
         $product = Product::findOrFail($id);
+
         return view('products.edit', compact('product'));
     }
 
