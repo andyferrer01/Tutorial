@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
     <h1>Create a New Product</h1>
@@ -23,5 +24,7 @@
         </div>
         <button type="submit">Create Product</button>
     </form>
+
+    <h1 class="text-red-500">Hello</h1>
 </body>
 </html>
